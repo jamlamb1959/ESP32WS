@@ -3,7 +3,6 @@
 #include <WiFi.h>
 
 #define LED                 2
-#define BLINKINV            500
 
 void setup() 
     {
@@ -11,7 +10,7 @@ void setup()
 
     delay( 1000 );
 
-    Serial.printf( "Compile: %s\r\n", __COMPILEDATE__ );
+    Serial.printf( "Compile: %s %s\r\n", __DATE__, __TIME__ );
     }
 
 #define BLINKINV 1000
